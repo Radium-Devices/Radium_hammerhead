@@ -561,11 +561,8 @@ all: vmlinux
 
 ifdef CONFIG_CC_OPTIMIZE_FOR_SIZE
 KBUILD_CFLAGS	+= -Os $(call cc-disable-warning,maybe-uninitialized,)
-<<<<<<< HEAD
 else
 KBUILD_CFLAGS	+= -Ofast
-=======
->>>>>>> f6703d23... Makefile: Optimization makeover!
 endif
 
 # Tell gcc to never replace conditional load with a non-conditional one
